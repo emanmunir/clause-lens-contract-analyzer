@@ -227,7 +227,11 @@ In **mock mode** (no API key), step 3 is replaced by a deterministic local fixtu
 
 ---
 
-## Screenshots
+## Screenshots & demo
+
+**▶️ Live demo** — paste a contract, run the analysis, and browse the severity-ranked risk report (recorded from the running app; an MP4 is in [`docs/contract-demo.mp4`](docs/contract-demo.mp4)):
+
+![Clause Lens — live demo](docs/contract-demo.gif)
 
 **Risk dashboard** — the full analysis rendered as an interactive report: document type, plain-English summary, and risk cards color-coded by severity (High / Medium / Low), each tracing back to a clause with an actionable recommendation, plus obligations, key dates, and missing-clause warnings:
 
