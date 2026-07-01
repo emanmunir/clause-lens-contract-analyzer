@@ -1,0 +1,43 @@
+# Clause Lens — AI Contract Analyzer
+#
+# Two services: a FastAPI backend and a Vite-built frontend.
+#
+# API key handling:
+#   The backend reads ANTHROPIC_API_KEY from ./backend/.env (see env_file below).
+#   Copy backend/.env.example to backend/.env and set your key there.
+#   With no key set, the backend runs in zero-key MOCK MODE — no external calls.
+#
+#   Prefer not to use a file? Export the key in your shell before starting and
+#   uncomment the `environment` block on the backend service:
+#       export ANTHROPIC_API_KEY=sk-ant-...
+#       docker compose up --build
+#   The shell value then flows through via ${ANTHROPIC_API_KEY}.
+
+services:
+  backend:
+    build: ./backend
+    container_name: clause-lens-backend
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    # Loads ANTHROPIC_API_KEY and other settings from backend/.env if present.
+    # The file is gitignored and optional — absent means mock mode.
+    env_file:
+      - ./backend/.env
+    # environment:
+    #   # Uncomment to pass the key straight from your shell instead of the .env file.
+    #   ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: clause-lens-frontend
+    # Serves the production build with `vite preview` (see frontend/Dockerfile).
+    ports:
+      - "4173:4173"
+    environment:
+      # Point the built frontend at the backend service.
+      VITE_API_URL: http://localhost:8000
+    depends_on:
+      - backend
+    restart: unless-stopped

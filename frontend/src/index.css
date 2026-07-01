@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-ink-50 text-ink-900 antialiased;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  /* A subtle grid + wash backdrop for the whole app — legal-tech, calm, not flashy. */
+  #root {
+    min-height: 100vh;
+    background:
+      radial-gradient(60rem 40rem at 85% -10%, rgba(31, 165, 131, 0.06), transparent 60%),
+      radial-gradient(50rem 40rem at 0% 0%, rgba(26, 37, 49, 0.05), transparent 55%),
+      linear-gradient(#f4f6f8, #eef1f4);
+  }
+
+  *:focus-visible {
+    @apply outline-none ring-2 ring-accent-500/60 ring-offset-2 ring-offset-ink-50;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-ink-200/70 bg-white shadow-card;
+  }
+
+  .tag-mono {
+    @apply inline-flex items-center rounded-md border border-ink-200 bg-ink-50 px-1.5 py-0.5 font-mono text-[11px] font-medium leading-none text-ink-600;
+  }
+
+  .section-title {
+    @apply flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-ink-500;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition-all duration-150 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-primary {
+    @apply btn bg-accent-600 text-white shadow-card hover:bg-accent-700 active:scale-[0.99];
+  }
+
+  .btn-ghost {
+    @apply btn border border-ink-200 bg-white text-ink-700 hover:border-ink-300 hover:bg-ink-50 active:scale-[0.99];
+  }
+}
+
+/* Skeleton shimmer used by the loading state. */
+.skeleton {
+  background-image: linear-gradient(
+    90deg,
+    rgba(201, 210, 220, 0.35) 0px,
+    rgba(201, 210, 220, 0.6) 40px,
+    rgba(201, 210, 220, 0.35) 80px
+  );
+  background-size: 800px 100%;
+}
+
+/* Thin, restrained scrollbars inside scrollable panels. */
+.scroll-slim::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scroll-slim::-webkit-scrollbar-thumb {
+  background-color: rgba(113, 135, 158, 0.35);
+  border-radius: 9999px;
+}
+.scroll-slim::-webkit-scrollbar-track {
+  background: transparent;
+}

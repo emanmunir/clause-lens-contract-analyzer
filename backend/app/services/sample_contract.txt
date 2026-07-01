@@ -1,0 +1,70 @@
+MUTUAL NON-DISCLOSURE AGREEMENT
+
+This Mutual Non-Disclosure Agreement (the "Agreement") is entered into as of
+March 1, 2025 (the "Effective Date") by and between:
+
+Northwind Analytics, Inc., a Delaware corporation with offices at 400 Market
+Street, San Francisco, CA ("Northwind"); and
+
+Cedar Grove Software Ltd., a company organized under the laws of England and
+Wales with offices at 12 Rosewood Lane, London, UK ("Cedar Grove").
+
+Northwind and Cedar Grove are each referred to as a "Party" and collectively
+as the "Parties."
+
+1. PURPOSE. The Parties wish to explore a potential business relationship
+   involving the integration of Cedar Grove's data-visualization toolkit with
+   Northwind's analytics platform (the "Purpose"). In connection with the
+   Purpose, each Party may disclose to the other certain confidential and
+   proprietary information.
+
+2. DEFINITION OF CONFIDENTIAL INFORMATION. "Confidential Information" means any
+   non-public information disclosed by one Party (the "Disclosing Party") to
+   the other Party (the "Receiving Party"), whether orally, in writing, or in
+   any other form, that is designated as confidential or that reasonably should
+   be understood to be confidential given its nature. Confidential Information
+   includes, without limitation, product roadmaps, source code, pricing,
+   customer lists, and business plans.
+
+3. OBLIGATIONS OF THE RECEIVING PARTY. The Receiving Party shall (a) use the
+   Confidential Information solely for the Purpose; (b) protect the
+   Confidential Information using at least the same degree of care it uses for
+   its own confidential information, and in no event less than a reasonable
+   degree of care; and (c) not disclose the Confidential Information to any
+   third party without the prior written consent of the Disclosing Party.
+
+4. EXCLUSIONS. Confidential Information does not include information that (a) is
+   or becomes publicly available through no breach of this Agreement; (b) was
+   rightfully known to the Receiving Party before disclosure; or (c) is
+   independently developed by the Receiving Party without use of the
+   Confidential Information.
+
+5. TERM. This Agreement shall remain in effect for a period of two (2) years
+   from the Effective Date. The confidentiality obligations set forth in
+   Section 3 shall survive termination and continue for three (3) years
+   following the disclosure of the relevant Confidential Information.
+
+6. RETURN OF MATERIALS. Upon the Disclosing Party's written request, the
+   Receiving Party shall promptly return or destroy all materials containing
+   Confidential Information.
+
+7. NO LICENSE. Nothing in this Agreement grants either Party any license or
+   other right to the other Party's intellectual property, except the limited
+   right to use the Confidential Information for the Purpose.
+
+8. GOVERNING LAW. This Agreement shall be governed by and construed in
+   accordance with the laws of the State of California, without regard to its
+   conflict-of-laws principles.
+
+9. ENTIRE AGREEMENT. This Agreement constitutes the entire understanding
+   between the Parties with respect to its subject matter and supersedes all
+   prior agreements, whether written or oral.
+
+IN WITNESS WHEREOF, the Parties have executed this Agreement as of the
+Effective Date.
+
+NORTHWIND ANALYTICS, INC.                 CEDAR GROVE SOFTWARE LTD.
+
+By: _______________________               By: _______________________
+Name: Dana Whitfield                      Name: Oliver Bennett
+Title: Chief Operating Officer            Title: Managing Director
