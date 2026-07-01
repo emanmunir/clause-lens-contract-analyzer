@@ -6,6 +6,10 @@ Clause Lens turns dense legal PDFs into a structured risk dashboard. It is built
 
 It also ships with a **zero-key mock mode**: run the whole product locally with no Anthropic API key and get realistic, deterministic sample analyses. Perfect for demos, CI, and evaluating the UX before wiring in a real key.
 
+![Clause Lens — risk dashboard analyzing a mutual NDA](docs/screenshot-dashboard.png)
+
+_Analyzing a mutual NDA: document type, a plain-English summary, and severity-ranked risk cards — each with a clause reference and a concrete recommendation._
+
 ---
 
 ## Why this matters / who it's for
@@ -225,15 +229,13 @@ In **mock mode** (no API key), step 3 is replaced by a deterministic local fixtu
 
 ## Screenshots
 
-> _Drop real screenshots into `docs/screenshots/` and update the links below._
+**Risk dashboard** — the full analysis rendered as an interactive report: document type, plain-English summary, and risk cards color-coded by severity (High / Medium / Low), each tracing back to a clause with an actionable recommendation, plus obligations, key dates, and missing-clause warnings:
 
-| Upload & paste | Risk dashboard |
-| -------------- | -------------- |
-| _`docs/screenshots/upload.png`_ | _`docs/screenshots/dashboard.png`_ |
+![Clause Lens — full risk dashboard](docs/screenshot-dashboard-full.png)
 
-| Clause traceability | Missing-clause warnings |
-| ------------------- | ----------------------- |
-| _`docs/screenshots/traceability.png`_ | _`docs/screenshots/missing-clauses.png`_ |
+**Onboarding** — upload a PDF/DOCX/TXT or paste contract text, or load a bundled sample to try it instantly:
+
+![Clause Lens — upload and paste onboarding screen](docs/screenshot-landing.png)
 
 ---
 
